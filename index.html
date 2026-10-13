@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Book Just for You - Birthday Storybook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-decoration bg-top-left"></div>
+    <div class="bg-decoration bg-top-right"></div>
+    <div class="bg-decoration bg-bottom-left"></div>
+    <div class="bg-decoration bg-bottom-right"></div>
+
+    <div id="app-container">
+        
+        <!-- SCREEN 1: Closed Book Landing Page -->
+        <div id="screen-closed-book" class="screen active">
+            <div class="landing-content" id="openBookTrigger">
+                <div class="book-wrapper">
+                    <div class="closed-book">
+                        <div class="book-spine-ribbon"></div>
+                        <div class="book-cover-content">
+                            <h1 class="book-cover-title">Rania's Memories</h1>
+                            <div class="embossed-heart">♡</div>
+                            <p style="font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; font-family: 'Lato', sans-serif;">Special For Your Birthday</p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="landing-title">A Little Memory Book From Me To You</h2>
+                <p class="landing-subtitle">Click to open ♡</p>
+            </div>
+        </div>
+
+        <!-- SCREEN 2-4: Open Book Reader Container -->
+        <div id="screen-book-reader" class="screen">
+            <div class="book-reader-container">
+                <div class="open-book">
+                    
+                    <!-- Page1: Pages 1 & 2 -->
+                    <div class="book-spread" id="spread-1" style="display: flex; width: 100%; height: 100%;">
+                        <!-- Page 1 -->
+                        <div class="book-page left-page">
+                            <div>
+                                <h3 class="handwritten-note">Lovely Princess ♡</h3>
+                            </div>
+                            <div class="scrapbook-grid">
+                                <div class="polaroid rot-1">
+                                    <img src="assets/images/memory1.png" alt="Birthday Girl Memory 1" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+1'">
+                                    <div class="polaroid-caption">First Lilies</div>
+                                </div>
+                                <div class="polaroid rot-2">
+                                    <img src="assets/images/memory2.png" alt="Birthday Girl Memory 2" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+2'">
+                                    <div class="polaroid-caption">Fav Matcha Lemonade</div>
+                                </div>
+                                <div class="polaroid rot-3">
+                                    <img src="assets/images/memory3.png" alt="Birthday Girl Memory 3" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+3'">
+                                    <div class="polaroid-caption">First Merdeka Celebration</div>
+                                </div>
+                                <div class="polaroid rot-4">
+                                    <img src="assets/images/memory4.png" alt="Birthday Girl Memory 4" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+4'">
+                                    <div class="polaroid-caption">First Fun Run</div>
+                                </div>
+                            </div>
+                            <div style="text-align: right; font-size: 0.8rem; color: #888;">1</div>
+                        </div>
+                        <!-- Page 2 -->
+                        <div class="book-page right-page">
+                            <div>
+                                <h3 class="handwritten-note">You are special ♡</h3>
+                            </div>
+                            <div class="scrapbook-grid">
+                                <div class="polaroid rot-2">
+                                    <img src="assets/images/memory5.png" alt="Birthday Girl Memory 5" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+5'">
+                                    <div class="polaroid-caption">First Orchestra</div>
+                                </div>
+                                <div class="polaroid rot-1">
+                                    <img src="assets/images/memory6.png" alt="Birthday Girl Memory 6" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+6'">
+                                    <div class="polaroid-caption">Media Prima Trip</div>
+                                </div>
+                                <div class="polaroid rot-4">
+                                    <img src="assets/images/memory7.png" alt="Birthday Girl Memory 7" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+7'">
+                                    <div class="polaroid-caption">Aquaria Wishlist</div>
+                                </div>
+                                <div class="polaroid rot-3">
+                                    <img src="assets/images/memory8.png" alt="Birthday Girl Memory 8" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+8'">
+                                    <div class="polaroid-caption">Library Study</div>
+                                </div>
+                            </div>
+                            <div style="text-align: right; font-size: 0.8rem; color: #888;">2</div>
+                        </div>
+                    </div>
+
+                  <!-- Page2: Pages 3 & 4 (Special Birthday Letter for Rania) -->
+                  <div class="book-spread spread-letter-container" id="spread-2">
+                      <!-- Page 3 -->
+                      <div class="book-page left-page letter-page">
+                          <div class="letter-header">
+                              <h3 class="letter-title">Happy birthday, Rania. 🤍</h3>
+                          </div>
+                          
+                          <div class="letter-body">
+                              <p class="letter-text">
+                                  Today is your special day, I still wanted to wish you properly. I hope this new chapter of your life brings you a lot of happiness, peace, good health, and beautiful things that you truly deserve.
+                              </p>
+                              <p class="letter-text">
+                                  Saya harap awak sentiasa dipermudahkan dalam segala urusan awak. Semoga apa saja yang awak tengah kejar dalam hidup, one by one, awak dapat capai. Saya harap awak kuat selalu, even on the days when things don’t go the way you want. And I hope you always have people around you who genuinely care about you, appreciate you, and make you feel loved. I will always be here if you need me.
+                              </p>
+                              <p class="letter-text">
+                                  Saya tahu banyak benda dah berubah between us. There are things that happened, things that were said, and memories that I will probably carry with me for a long time. But despite everything, saya tak pernah berharap benda buruk jadi dkt awak. Awak sentiasa jdi org yang saya paling sayang, I think a part of me will always genuinely wish good things for you, even from a distance.
+                              </p>
+                              <p class="letter-text">
+                                  Thank you for the good memories. Thank you for the moments when we were genuinely happy together. Thank you for the laughter, the conversations, the random little moments, and all those things that once made ordinary days feel special. Whatever happened after that, those moments were still real to me, and I will always appreciate that they happened.
+                              </p>
+                          </div>
+
+                          <div class="letter-footer">
+                              <span class="letter-tag">For Rania</span>
+                              <span>3</span>
+                          </div>
+                      </div>
+
+                      <!-- Page 4 -->
+                      <div class="book-page right-page letter-page">
+                          <div class="letter-body letter-body-p4">
+                              <p class="letter-text">
+                                  Saya harap awak tahu yang awak sangat bermakna dalam hidup saya. And although our story didn’t end the way I once imagined it would, I don’t want your birthday to be about the past or about anything heavy. Today is about you.
+                              </p>
+                              <p class="letter-text">
+                                  So, please enjoy your day. Go somewhere nice, eat something you love, laugh as much as you can, take lots of pictures, and make yourself happy. You deserve to enjoy your own day without carrying anything heavy in your heart.
+                              </p>
+                              <p class="letter-text">
+                                  Saya nak sambut dengan awak birthday awak klau awak sudi. apa² pon, May this new age of yours be kinder to you. May you become happier, stronger, wiser, and more confident in yourself.
+                              </p>
+                              <p class="letter-text">
+                                  And most importantly, saya harap awak jaga diri baik-baik. Jangan lupa makan, jangan terlalu paksa diri, and please remember to rest when you need to. I may not be the person who gets to remind you about these things if you really mean it when you said you don't want me to be around you anymore, but I still hope you’re taking care of yourself and one day you would love to spend your days with me sampai hari tua.
+                              </p>
+                              <p class="letter-text">
+                                  Once again, happy birthday, Rania. 🤍 I genuinely hope life treats you well. I hope you get everything you’ve been praying for, everything you’ve been working towards, and maybe even some beautiful things you never expected.
+                              </p>
+                              <p class="letter-closing">
+                                  Saya doakan awak bahagia. Bukan untuk hari ini saja, tapi untuk hari² yang akan datang jugak.<br>
+                                  <strong>Happy birthday. Take care of yourself, always. I love you so much 🎂🤍</strong>
+                              </p>
+                          </div>
+
+                          <div class="letter-footer">
+                              <span>4</span>
+                              <span class="letter-tag">Always in my heart ♡</span>
+                          </div>
+                      </div>
+                  </div>
+
+                    <!-- SPREAD 3: Pages 5 & 6 -->
+                    <div class="book-spread" id="spread-3" style="display: none; width: 100%; height: 100%;">
+                        <!-- Page 5 -->
+                        <div class="book-page left-page">
+                            <div>
+                                <h3 class="handwritten-note">So many beautiful moments ♡</h3>
+                            </div>
+                            <div class="scrapbook-grid">
+                                <div class="polaroid rot-3">
+                                    <img src="assets/images/memory9.png" alt="Memory 9" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+12'">
+                                    <div class="polaroid-caption">The happiest when it come to lilies</div>
+                                </div>
+                                <div class="polaroid rot-4">
+                                    <img src="assets/images/memory10.png" alt="Memory 10" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+13'">
+                                    <div class="polaroid-caption">Your Mahsuri Dalam laut presentation</div>
+                                </div>
+                                <div class="polaroid rot-1">
+                                    <img src="assets/images/memory11.png" alt="Memory 11" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+14'">
+                                    <div class="polaroid-caption">Senyum Sebab Dah Dapat Makan</div>
+                                </div>
+                                <div class="polaroid rot-2">
+                                    <img src="assets/images/memory12.png" alt="Memory 12" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+15'">
+                                    <div class="polaroid-caption">Forever My Fav Fairytail Princess</div>
+                                </div>
+                            </div>
+                            <div style="text-align: right; font-size: 0.8rem; color: #888;">5</div>
+                        </div>
+                        <!-- Page 6 -->
+                        <div class="book-page right-page">
+                            <div>
+                                <h3 class="handwritten-note">Looking Forward ♡</h3>
+                            </div>
+                            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; flex-grow: 1; padding: 15px; text-align: center; gap: 20px;">
+                                <div class="polaroid rot-4" style="width: 180px;">
+                                    <img src="assets/images/memory13.png" alt="Memory 13" onerror="this.src='https://placehold.co/300x400/B86F78/FFF8F0?text=Photo+16'">
+                                    <div class="polaroid-caption">Forever My Lovely Princess</div>
+                                </div>
+                                <p class="wish-text" style="font-size: 1rem; margin: 0;">
+                                  <br>Thank you for being you. Semoga banyak lagi kebahagiaan yang akan datang untuk awak dan banyak lagi memories akan datang. Semoga awak sudi create banyak lagi memories dengan saya hehe. Happy Birthday Pretty ♡
+                                </p>
+                            </div>
+                            <div style="text-align: right; font-size: 0.8rem; color: #888;">6</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Book Navigation Bar -->
+                <div class="book-nav-bar">
+                    <button class="nav-btn" id="prevPageBtn">← Previous</button>
+                    <div class="page-indicator" id="pageIndicatorText">Pages 1–2 of 6</div>
+                    <button class="nav-btn" id="nextPageBtn">Next Page→</button>
+                </div>
+            </div>
+        </div>
+
+<!-- SCREEN 5: Final Birthday Celebration -->
+        <div id="screen-celebration" class="screen">
+            <div class="celebration-screen">
+                <!-- Illustrated Lily Bouquet via Local Image Asset -->
+                <div class="bouquet-container">
+                    <img src="assets/images/lily.png" alt="Lily Bouquet" class="lily-bouquet-img" onerror="this.onerror=null; this.src='assets/images/lily-bouquet.png';">
+                </div>
+
+                <h1 class="celebration-title">Happy Birthday My Beautiful Princess</h1>
+                <p class="celebration-message">
+                    "Nah Bunga lily fav awak. I hope this little book made you smile. I make this book just to reminded you of all the memories that are created till your birthday date🤍. Nanti bila awak free kita jumpa boleh? Nak celebrate birthday awak!"
+                </p>
+                
+                <div class="action-row">
+                    <button class="nav-btn" id="readAgainBtn">Read Again ♡</button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Audio Elements (Synthesized / Local fallback handling) -->
+    <audio id="audioBookOpen" preload="auto">
+        <source src="assets/audio/open-book.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audioPageTurn" preload="auto">
+        <source src="assets/audio/page-turn.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audioBookClose" preload="auto">
+        <source src="assets/audio/close-book.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audioBirthdaySong" preload="auto" loop>
+        <source src="assets/audio/birthday-song.mp3" type="audio/mpeg">
+    </audio>
+
+<script src="script.js"></script>
+</body>
+</html>
